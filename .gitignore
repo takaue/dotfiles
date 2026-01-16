@@ -30,6 +30,7 @@ i# 全てのファイルを一度、無視
 !/bin
 !/.zsh.d
 !/.config
+/.config/gh
 !/Brewfile
 !/.rbenv/default-gems
 
