@@ -1,7 +1,0 @@
-2025/03/29-17:43:24.587 35cf7 Reusing MANIFEST /home/bou/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/29-17:43:24.588 35cf7 Recovering log #18
-2025/03/29-17:43:24.590 35cf7 Reusing old log /home/bou/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000018.log 
-2025/03/29-17:43:24.590 35cf7 Delete type=2 #17
-2025/03/29-18:01:48.796 35cf7 Level-0 table #23: started
-2025/03/29-18:01:48.829 35cf7 Level-0 table #23: 1264667 bytes OK
-2025/03/29-18:01:48.841 35cf7 Delete type=0 #18
