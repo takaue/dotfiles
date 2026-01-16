@@ -1,0 +1,16 @@
+{
+   "background": {
+      "service_worker": "./js/background.js"
+   },
+   "description": "formのcontext menuに「全角へ変換する」、「半角へ変換する」を追加します",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "48": "/img/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDO5dLDBM2Ai5wti1+/0yjthfimse2oLu1V5EpQfCdQ0OhzagsaZiGxiRud/3pfZzudqsEVcsXADercfwyOLfMW0Cs2m+9z+oCGxeUox4rsg48k75p/LivK002/uHCjBIcnCSS9a+IP8sLbnhcJw/8KMhnmO8nVE7V2zvMUmSIRZQIDAQAB",
+   "manifest_version": 3,
+   "name": "全角半角変換",
+   "permissions": [ "contextMenus", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3"
+}

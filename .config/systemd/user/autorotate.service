@@ -1,0 +1,8 @@
+[Unit]
+Description=autorotate
+
+[Service]
+ExecStart=/home/bou/app/bin/autorotate.sh
+
+[Install]
+WantedBy=default.target
