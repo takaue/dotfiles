@@ -5,8 +5,11 @@ multiplier = 5
 [font]
 size = 12.0
 offset = { x = 0, y = 4 }
-normal = { family = "NOTONOT Console", style="Regular" }
-bold = { family = "NOTONOTO Console", style="Bold" }
-italic = { family = "NOTONOTO Console", style="Italic" }
-bold_italic = { family = "NOTONOTO Console", style="Bold Italic" }
+normal = { family = "monospace", style="Regular" }
+bold = { family = "monospace", style="Bold" }
+italic = { family = "monospace", style="Italic" }
+bold_italic = { family = "monospace", style="Bold Italic" }
+
+[window]
+decorations = "None"
 

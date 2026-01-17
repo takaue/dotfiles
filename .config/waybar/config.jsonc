@@ -13,7 +13,9 @@
         "memory",
         "network",
         "idle_inhibitor",
-        "cffi/niri-workspaces-enhanced",
+        "hyprland/workspaces",
+        "hyprland/submap",
+        "hyprland/window"
     ],
     "modules-center": [
     ],
@@ -24,6 +26,7 @@
         "power-profiles-daemon",
         "backlight",
 //        "keyboard-state",
+        "hyprland/language",
         "battery",
         "tray",
         "custom/power"
@@ -42,37 +45,21 @@
 	    "on-click": "screenrotate.sh",
     },
     // Modules configuration
-    "cffi/niri-workspaces-enhanced": {
-      // Make sure to set the path to the install location on your system
-      // "module_path": "~/.config/waybar/niri-workspaces-enhanced.so",
-      // "module_path": "./target/debug/libwaybar_niri_workspaces_enhanced.so",
-      "module_path": "/usr/lib/waybar/libwaybar_niri_workspaces_enhanced.so",
-// Format string for workspace labels. Available placeholders:
-      //   {index}          - Workspace index number
-      //   {name}           - Workspace name (might be empty)
-      //   {index-and-name} - Index followed by name if present (e.g., "1 Work")
-      //   {value}          - Name if present, otherwise index
-      //   {separator}      - ": " when icons are present, "" when empty
-      //   {window-icons}   - Formatted icons for windows in workspace
-      "format": "{index-and-name}{separator}{window-icons}",
-      // Apply separate styles to icons depending on current state
-      "window-icon-format": {
-        "default": "{icon}",
-        "urgent": "<span foreground='red'>{icon}</span>",
-        "focused": "<span foreground='blue'>{icon}</span>",
-      },
-      // A mapping from window app_id to icon. Note that this module does
-      // case-insensitive matching of app_ids, so capitalization doesn't matter.
-      "window-icons": {
-        "com.mitchellh.ghostty": "",
-        "darktable": "",
-        "foot": "",
-        "google-chrome": "",
-        "spotify": "",
-        "steam": "",
-      },
-      // If no icon is found for a window, the default is used instead
-      "window-icon-default": "*",
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            //"3": "",
+            //"4": "",
+            //"5": "",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
     },
     "keyboard-state": {
         "numlock": true,
@@ -82,6 +69,41 @@
             "locked": "",
             "unlocked": ""
         }
+    },
+    "hyprland/submap": {
+	"format": "✌️ {}",
+	"max-length": 8,
+	"tooltip": false
+    },
+    "hyprland/window": {
+        "icon": true,
+	"rotate": 270
+    },
+    "mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "unknown-tag": "N/A",
+        "interval": 5,
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
     },
     "idle_inhibitor": {
         "format": "{icon}",

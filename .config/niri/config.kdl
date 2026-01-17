@@ -276,7 +276,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "swaybg" "-c" "AA8888"
 spawn-at-startup "waybar"
-spawn-at-startup "swaync"
+spawn-at-startup "mako"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -398,7 +398,8 @@ binds {
     // You can also move the mouse into the top-left hot corner,
     // or do a four-finger swipe up on a touchpad.
     Mod+O repeat=false { toggle-overview; }
-    Alt+Tab repeat=false { toggle-overview; }
+    // Alt+Tab repeat=false { toggle-overview; }
+    Alt+Tab repeat=false { focus-window-previous; }
 
     Mod+Q repeat=false { close-window; }
 
